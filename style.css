@@ -12,14 +12,26 @@ header {
     text-align: center;
     padding: 80px 20px;
     height: 300px; /* Adjust height for banner effect */
-    background: url('images/background.webp') center/cover no-repeat, rgba(0, 128, 0, 0.2); /* WEBP image + Transparent green overlay */
+    background: url('images/background.png') right center/cover no-repeat, rgba(0, 128, 0, 0.2); /* Background image aligned to right */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     color: white; /* Ensures text remains visible */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added gray shadow to text */
 }
+
+/* Header Title */
+header h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger shadow for title */
+}
+
+/* Header Paragraph */
+header p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slight shadow for better visibility */
+}
+
 
 
 /* Navigation */
