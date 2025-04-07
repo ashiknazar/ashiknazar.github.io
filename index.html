@@ -1,89 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashik Nazar - Data Scientist</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/70/User_icon_BLACK-01.png" type="image/png">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .card, .card-link {
+      background-color: white;
+      color: #333;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s;
+    }
+
+    .card-link:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img, .card-link img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .card h3, .card-link h3 {
+      margin: 0;
+    }
+
+    .card p {
+      margin-top: 10px;
+    }
+
+    .contact {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #aad4ff;
+      text-decoration: none;
+      display: block;
+      margin: 8px 0;
+    }
+    .divider {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.4;
+}
+
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Ashik Nazar</h1>
+    <p>Data Scientist | Analyst | Machine Learning Enthusiast</p>
+  </header>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Your Name</h1>
-        <p>Data Science Engineer | AI & ML Enthusiast | Data Analyst</p>
-        
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- Project Cards -->
+  <section class="section">
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>Weather Prediction Model using Logistic Regression and AWS.</p>
+    </div>
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>Face Recognition System with MobileFaceNet and Flask deployment.</p>
+    </div>
+    <div class="card">
+      <h3>Project 3</h3>
+      <p>Real-time Ambient Light Data Streaming App (Kotlin + AWS).</p>
+    </div>
+  </section>
+ 
 
-        <div class="cta-buttons">
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
+  <!-- Blog Cards with Clickable Links -->
+  <section class="section">
+    <a href="blog1.html" class="card-link">
+      <img src="images/eg.jpg" alt="Blog Image 1" />
+      <h3>Understanding Machine Learning Models</h3>
+    </a>
+    <a href="blog2.html" class="card-link">
+      <img src="images/dg.jpg" alt="Blog Image 2" />
+      <h3>CI/CD for Data Science Projects</h3>
+    </a>
+    <a href="blog3.html" class="card-link">
+      <img src="images/cg.jpg" alt="Blog Image 3" />
+      <h3>Smart City Data Architecture</h3>
+    </a>
+  </section>
 
-        <div class="socials">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
-            <a href="https://kaggle.com/yourprofile" target="_blank">Kaggle</a>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Data Science Engineer with experience in machine learning, deep learning, and data analytics. Passionate about solving real-world problems using AI.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-box">Python</div>
-            <div class="skill-box">Machine Learning</div>
-            <div class="skill-box">Deep Learning</div>
-            <div class="skill-box">Data Visualization</div>
-            <div class="skill-box">SQL</div>
-            <div class="skill-box">Big Data</div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Stock Price Prediction using ML</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Customer Segmentation with Clustering</p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>AI Chatbot for Customer Support</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-        <p>GitHub: <a href="#">github.com/yourusername</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Your Name. All Rights Reserved.</p>
-    </footer>
-
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <hr class="divider">
+    <a href="#">datas293@gmail.com</a>
+    <a href="https://www.linkedin.com/in/ashik-n-22b36b152/">LinkedIn</a>
+    <a href="https://github.com/ashiknazar">GitHub</a>
+  </section>
 </body>
 </html>

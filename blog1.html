@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding Machine Learning Models</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: white;
+      color: #333;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 30px;
+    }
+
+    .blog-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .blog-content p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-content {
+        padding: 20px;
+      }
+
+      .blog-content h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="back-button" title="Back to Home">&#8592;</a>
+    <img src="images/eg.jpg" alt="Understanding Machine Learning Models" class="blog-image" />
+
+    <div class="blog-content">
+      <h1>Understanding Machine Learning Models</h1>
+
+      <p>
+        Machine Learning (ML) is a branch of artificial intelligence that focuses on building systems
+        that learn from data and improve their performance without being explicitly programmed.
+        ML models are categorized into supervised, unsupervised, and reinforcement learning models.
+      </p>
+
+      <p>
+        <strong>Supervised learning</strong> involves training a model on a labeled dataset,
+        where the input comes with the correct output. Examples include linear regression,
+        logistic regression, decision trees, and support vector machines.
+      </p>
+
+      <p>
+        <strong>Unsupervised learning</strong> deals with unlabeled data. The goal is to find
+        hidden patterns or intrinsic structures in input data. Common algorithms include
+        k-means clustering, hierarchical clustering, and Principal Component Analysis (PCA).
+      </p>
+
+      <p>
+        <strong>Reinforcement learning</strong> is about training agents to make sequences of decisions
+        by rewarding or penalizing them based on their actions. It's widely used in robotics,
+        gaming, and real-time decision systems.
+      </p>
+
+      <p>
+        Model selection depends on the problem type, data availability, and expected outcome.
+        It's crucial to evaluate models using metrics like accuracy, precision, recall, F1 score,
+        and AUC-ROC.
+      </p>
+
+      <p>
+        In production, deploying ML models requires additional layers like data preprocessing,
+        model monitoring, CI/CD pipelines, and real-time inference capabilities.
+        Understanding the landscape of ML models and deployment strategies is essential
+        for any modern data scientist or ML engineer.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
